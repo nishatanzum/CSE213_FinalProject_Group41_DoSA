@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseproject.cse213_finalproject_group41_dosa.nishat.ClubmemberListController">
+   <children>
+      <Label alignment="CENTER" layoutX="75.0" layoutY="45.0" prefHeight="45.0" prefWidth="372.0" style="-fx-border-color: blue;" text="Club Member List">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="memberListTableView" layoutX="118.0" layoutY="130.0" prefHeight="200.0" prefWidth="287.0">
+         <columns>
+            <TableColumn fx:id="memberNameTableColumn" prefWidth="114.0" text="Member Name" />
+            <TableColumn fx:id="idTableColumn" prefWidth="89.0" text="ID" />
+            <TableColumn fx:id="roleTableColumn" prefWidth="83.0" text="Role" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

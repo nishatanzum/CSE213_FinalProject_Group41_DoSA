@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="clubBorderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseproject.cse213_finalproject_group41_dosa.nishat.ClubmemberDashboardController">
+   <top>
+      <Label alignment="CENTER" prefHeight="56.0" prefWidth="339.0" style="-fx-border-color: Blue;" text="ClubMember Dashboard" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <VBox prefHeight="585.0" prefWidth="214.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#viewUpcomingApprovedEventsButtonOnAction" text="ViewUpcomingApprovedEvents">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#registerToJoinEventsButtonOnAction" prefHeight="25.0" prefWidth="201.0" text="RegisterToJoinEvent">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#cancelEventRegistrationButtonOnAction" prefHeight="25.0" prefWidth="201.0" text="CancelEventRegistration">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#viewClubMemberListButtonOnAction" prefHeight="25.0" prefWidth="209.0" text="ViewClubMemberList">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#submitEventIdeasButtonOnAction" prefHeight="25.0" prefWidth="205.0" text="SubmitEventIdeas">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#viewClubInformationButtonOnAction" prefHeight="25.0" prefWidth="205.0" text="ViewClubInformation">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#giveFeedbackAfterEventsButtonOnAction" prefHeight="25.0" prefWidth="208.0" text="GiveFeedbackAfterEvents">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#editPersonalProfileButtonOnAction" prefHeight="25.0" prefWidth="204.0" text="EditPersonalProfile">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#signOutButtonOnAction" prefHeight="25.0" prefWidth="212.0" text="Sign Out">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="585.0" prefWidth="348.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

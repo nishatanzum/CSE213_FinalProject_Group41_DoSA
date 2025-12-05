@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="361.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.oop.courseproject.cse213_finalproject_group41_dosa.UserController">
+   <children>
+      <Label alignment="CENTER" layoutX="80.0" layoutY="28.0" prefHeight="48.0" prefWidth="303.0" style="-fx-border-color: Blue;" text="DoSA Dashboard">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="187.0" layoutY="237.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="89.0" text="Login" />
+      <Label layoutX="80.0" layoutY="105.0" prefHeight="25.0" prefWidth="89.0" text="UserType">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="userTypeCombobox" layoutX="192.0" layoutY="106.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="userIDTextfield" layoutX="222.0" layoutY="143.0" />
+      <PasswordField fx:id="passwordTextField" layoutX="222.0" layoutY="181.0" />
+      <Label layoutX="80.0" layoutY="147.0" prefHeight="26.0" prefWidth="60.0" text="UserID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="185.0" prefHeight="26.0" prefWidth="95.0" text="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="notificationLabel" layoutX="54.0" layoutY="293.0" prefHeight="41.0" prefWidth="348.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jeviars.controller.VolunteerController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="184.0" spacing="10.0" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Button fx:id="viewEventsButton" mnemonicParsing="false" onAction="#viewUpcomingEvents" prefHeight="22.0" prefWidth="212.0" text="View Upcoming Events">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="registerButton" mnemonicParsing="false" onAction="#handleRegistration" prefHeight="22.0" prefWidth="252.0" text="Register for Event">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewHoursButton" mnemonicParsing="false" onAction="#iewVolunteerHours" prefHeight="17.0" prefWidth="197.0" text="View Volunteer Hours">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkEligibilityButton" mnemonicParsing="false" onAction="#checkCertificateEligibility" prefHeight="18.0" prefWidth="235.0" text="Check Certificate">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="submitFeedbackButton" mnemonicParsing="false" onAction="#openFeedbackForm" prefHeight="22.0" prefWidth="193.0" text="Submit Feedback">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="editProfileButton" mnemonicParsing="false" onAction="#openProfileEdit" prefHeight="22.0" prefWidth="256.0" text="Edit Profile">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <TableView fx:id="eventTableView" prefHeight="400.0" prefWidth="422.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colEventTitle" prefWidth="75.0" text="Title" />
+          <TableColumn fx:id="colEventDate" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="colEventVenue" prefWidth="75.0" text="Venue" />
+            <TableColumn fx:id="colEventSeats" prefWidth="75.0" text="Seats" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+</BorderPane>

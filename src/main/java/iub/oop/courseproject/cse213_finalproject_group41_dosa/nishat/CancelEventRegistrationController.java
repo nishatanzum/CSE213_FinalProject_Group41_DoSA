@@ -5,16 +5,20 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
+import java.util.ArrayList;
+
 public class CancelEventRegistrationController
 {
     @javafx.fxml.FXML
     private Label confirmationMassegeLabel;
     @javafx.fxml.FXML
-    private TableColumn dateTableColumn;
+    private TableColumn<Student, String> dateTableColumn;
     @javafx.fxml.FXML
-    private TableColumn eventNameTableColumn;
+    private TableColumn<Student, String>  eventNameTableColumn;
     @javafx.fxml.FXML
-    private TableView cancelEventTableView;
+    private TableView <Student> cancelEventTableView;
+
+    ArrayList<Event> eventList;
 
     @javafx.fxml.FXML
     public void initialize() {

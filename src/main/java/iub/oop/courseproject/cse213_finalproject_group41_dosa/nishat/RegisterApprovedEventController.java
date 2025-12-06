@@ -7,15 +7,15 @@ import javafx.scene.control.TableView;
 public class RegisterApprovedEventController
 {
     @javafx.fxml.FXML
-    private TableColumn eventTitleTableColumn;
+    private TableColumn<Student, String> eventTitleTableColumn;
     @javafx.fxml.FXML
-    private TableColumn eventIdTableColumn;
+    private TableColumn<Student, String> eventIdTableColumn;
     @javafx.fxml.FXML
-    private TableColumn eventDateTableColumn;
+    private TableColumn<Student, String> eventDateTableColumn;
     @javafx.fxml.FXML
-    private TableView approvedEventTableView;
+    private TableView<Student> approvedEventTableView;
     @javafx.fxml.FXML
-    private TableColumn eventVenueTableColumn;
+    private TableColumn<Student, String> eventVenueTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

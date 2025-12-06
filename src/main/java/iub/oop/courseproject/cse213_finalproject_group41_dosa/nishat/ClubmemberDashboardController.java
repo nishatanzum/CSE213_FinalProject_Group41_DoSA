@@ -3,7 +3,10 @@ package iub.oop.courseproject.cse213_finalproject_group41_dosa.nishat;
 import iub.oop.courseproject.cse213_finalproject_group41_dosa.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 public class ClubmemberDashboardController
 {
@@ -22,8 +25,6 @@ public class ClubmemberDashboardController
             clubBorderpane.setCenter(fxmlLoader.load());
         }
         catch(Exception e){
-            e.printStackTrace();
-
 
         }
     }
@@ -36,8 +37,6 @@ public class ClubmemberDashboardController
             clubBorderpane.setCenter(fxmlLoader.load());
         }
         catch(Exception e){
-            e.printStackTrace();
-
 
         }
     }
@@ -50,7 +49,7 @@ public class ClubmemberDashboardController
             clubBorderpane.setCenter(fxmlLoader.load());
         }
         catch(Exception e){
-            e.printStackTrace();
+
 
 
         }
@@ -64,7 +63,7 @@ public class ClubmemberDashboardController
             clubBorderpane.setCenter(fxmlLoader.load());
         }
         catch(Exception e){
-            e.printStackTrace();
+
 
 
         }
@@ -78,7 +77,7 @@ public class ClubmemberDashboardController
             clubBorderpane.setCenter(fxmlLoader.load());
         }
         catch(Exception e){
-            e.printStackTrace();
+
 
 
         }
@@ -92,7 +91,7 @@ public class ClubmemberDashboardController
             clubBorderpane.setCenter(fxmlLoader.load());
         }
         catch(Exception e){
-            e.printStackTrace();
+
 
 
         }
@@ -106,7 +105,7 @@ public class ClubmemberDashboardController
             clubBorderpane.setCenter(fxmlLoader.load());
         }
         catch(Exception e){
-            e.printStackTrace();
+
 
 
         }
@@ -114,6 +113,29 @@ public class ClubmemberDashboardController
 
     @javafx.fxml.FXML
     public void signOutButtonOnAction(ActionEvent actionEvent) {
+        try {
+
+            Alert a2 = new Alert(Alert.AlertType.INFORMATION);
+            a2.setTitle("Sign Out");
+            a2.setHeaderText(null);
+            a2.setContentText("You have been logged out successfully.");
+            a2.showAndWait();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("user-view.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage= new Stage();
+            nextStage.setTitle("DoSA Dashboard");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+
+        }
+        catch(Exception e){
+
+
+
+        }
+
+
     }
 
     @javafx.fxml.FXML
@@ -124,7 +146,7 @@ public class ClubmemberDashboardController
             clubBorderpane.setCenter(fxmlLoader.load());
         }
         catch(Exception e){
-            e.printStackTrace();
+
 
 
         }

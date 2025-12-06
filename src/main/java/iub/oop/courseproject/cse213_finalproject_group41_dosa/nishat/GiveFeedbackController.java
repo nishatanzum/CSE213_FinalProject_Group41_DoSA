@@ -8,11 +8,11 @@ import javafx.scene.control.TableView;
 public class GiveFeedbackController
 {
     @javafx.fxml.FXML
-    private TableColumn eventIdTableColumn;
+    private TableColumn<Student, String> eventIdTableColumn;
     @javafx.fxml.FXML
-    private TableView feedbackTableView;
+    private TableView<Student> feedbackTableView;
     @javafx.fxml.FXML
-    private TableColumn ratingTableColumn;
+    private TableColumn<Student, String> ratingTableColumn;
     @javafx.fxml.FXML
     private Label feedbackconfirmationlabel;
 

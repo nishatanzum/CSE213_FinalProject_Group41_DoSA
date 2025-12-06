@@ -8,11 +8,11 @@ import javafx.scene.control.TableView;
 public class ClubmemberGiveFeedbackController
 {
     @javafx.fxml.FXML
-    private TableColumn eventIdTableColumn;
+    private TableColumn<ClubMember, String> eventIdTableColumn;
     @javafx.fxml.FXML
-    private TableView feedbackTableView;
+    private TableView<ClubMember> feedbackTableView;
     @javafx.fxml.FXML
-    private TableColumn ratingTableColumn;
+    private TableColumn<ClubMember, String> ratingTableColumn;
     @javafx.fxml.FXML
     private Label thankingLabel;
 
